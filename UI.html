@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillConnect Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      width: 350px;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      background: #fff;
+    }
+    .logo {
+      width: 70px;
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: 24px;
+      margin: 5px 0;
+      color: #333;
+    }
+    p {
+      margin: 0 0 20px;
+      font-size: 14px;
+      color: #555;
+    }
+    input, select {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    .phone-container {
+      display: flex;
+      align-items: center;
+    }
+    .phone-container input {
+      flex: 1;
+      border-radius: 6px 0 0 6px;
+      border-right: none;
+    }
+    .otp-btn {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      border-radius: 0 6px 6px 0;
+      cursor: pointer;
+    }
+    .register-btn {
+      width: 100%;
+      padding: 14px;
+      background-color: #4CAF50;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .register-btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Logo -->
+    <img src="https://img.icons8.com/color/96/handshake.png" alt="logo" class="logo">
+    
+    <!-- Title -->
+    <h1>SkillConnect</h1>
+    <p>Connecting Skills, Building Communities</p>
+    
+    <!-- Registration Form -->
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      
+      <div class="phone-container">
+        <input type="tel" placeholder="Phone Number" required>
+        <button type="button" class="otp-btn">OTP</button>
+      </div>
+      
+      <select required>
+        <option value="" disabled selected>Skill</option>
+        <option value="carpentry">Carpentry</option>
+        <option value="plumbing">Plumbing</option>
+        <option value="teaching">Teaching</option>
+        <option value="coding">Coding</option>
+      </select>
+      
+      <input type="text" placeholder="Location" required>
+      <input type="password" placeholder="Password" required>
+      <input type="password" placeholder="Confirm Password" required>
+      
+      <button type="submit" class="register-btn">Register</button>
+    </form>
+  </div>
+</body>
+</html>
